@@ -11,5 +11,14 @@ swiper-container {
 }
 
 swiper-slide {
-  @apply flex items-center justify-center p-4 text-center;
+  @apply flex justify-center p-4 pt-24;
+}
+
+.social-link {
+  @apply p-2 block;
+}
+
+.slide-1 {
+  background-image: url(../img/bg-slide-1.jpg);
+  @apply bg-cover;
 }
