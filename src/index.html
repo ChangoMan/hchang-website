@@ -16,17 +16,19 @@
 
     <!-- <link rel="manifest" href="site.webmanifest" /> -->
     <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Place favicon.ico in the root directory -->
-
     <link rel="stylesheet" href="styles/styles.css" />
-
     <meta name="theme-color" content="#fafafa" />
   </head>
 
   <body class="bg-black text-zinc-200">
-    <main class="mx-auto max-w-xl bg-zinc-800">
-      <swiper-container direction="vertical" pagination="true" loop="true">
-        <swiper-slide class="bg-blue-800">Slide 1</swiper-slide>
+    <main class="mx-auto max-w-xl bg-zinc-800 cursor-grab">
+      <swiper-container direction="vertical" loop="true" mousewheel="true">
+        <swiper-slide class="bg-blue-800">
+          <div>
+            <h1>Hunter Chang</h1>
+            <h2>Senior Front-end Engineer</h2>
+          </div>
+        </swiper-slide>
         <swiper-slide class="bg-red-800">Slide 2</swiper-slide>
         <swiper-slide class="bg-green-800">Slide 3</swiper-slide>
       </swiper-container>

@@ -11,12 +11,5 @@ swiper-container {
 }
 
 swiper-slide {
-  @apply text-center flex items-center justify-center;
-}
-
-swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  @apply flex items-center justify-center p-4 text-center;
 }
