@@ -24,30 +24,38 @@
     <main class="mx-auto max-w-xl bg-zinc-800 cursor-grab">
       <swiper-container direction="vertical" loop="true" mousewheel="true">
         <swiper-slide class="slide-1">
-          <div>
+          <div class="w-full">
             <img
               class="block mx-auto mb-6 rounded-full w-32 h-32"
               src="img/hunter-chang-profile.jpg"
               alt="Hunter Chang"
             />
-            <h1 class="text-center text-4xl lg:text-6xl font-bold">
+            <h1 class="text-center text-4xl lg:text-4xl font-bold">
               Hunter Chang
             </h1>
+
+            <a
+              class="block w-full max-w-md mx-auto py-4 px-2 mt-8 border-2 border-white rounded-md text-center shadow-sm"
+              href="https://codebushi.com/"
+              target="_blank"
+              rel="noopener"
+              >Code Bushi &bull; Web Development Blog
+            </a>
           </div>
         </swiper-slide>
-        <swiper-slide class="bg-red-800">Slide 2</swiper-slide>
-        <swiper-slide class="bg-green-800">Slide 3</swiper-slide>
+        <swiper-slide class="slide-2">Slide 2</swiper-slide>
+        <swiper-slide class="slide-3">Slide 3</swiper-slide>
       </swiper-container>
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 
       <p
-        class="fixed bottom-0 left-0 z-10 pb-8 pl-6 pr-24 text-sm leading-relaxed"
+        class="absolute bottom-0 left-0 z-10 pb-8 pl-6 pr-24 text-sm leading-relaxed drop-shadow-sm"
       >
         Sleep Deprived Father. Senior Front-end Engineer. Currently travel
         blogging around China and Asia.
       </p>
 
-      <div class="fixed right-0 bottom-0 z-20 pb-6 pr-4">
+      <div class="absolute right-0 bottom-0 z-20 pb-6 pr-4">
         <a
           class="social-link"
           href="https://twitter.com/hunterhchang"

@@ -11,7 +11,7 @@ swiper-container {
 }
 
 swiper-slide {
-  @apply flex justify-center p-4 pt-24;
+  @apply flex justify-center p-4 pt-24 bg-cover bg-no-repeat;
 }
 
 .social-link {
@@ -20,5 +20,14 @@ swiper-slide {
 
 .slide-1 {
   background-image: url(../img/bg-slide-1.jpg);
-  @apply bg-cover;
+}
+
+
+.slide-2 {
+  background-image: url(../img/bg-slide-2.jpg);
+}
+
+
+.slide-3 {
+  background-image: url(../img/bg-slide-3.jpg);
 }
