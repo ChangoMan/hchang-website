@@ -21,16 +21,17 @@
     <link rel="stylesheet" href="styles/styles.css" />
 
     <meta name="theme-color" content="#fafafa" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
   </head>
 
-  <body class="bg-zinc-800 text-zinc-200">
-    <main class="mx-auto max-w-3xl">
-      <swiper-container>
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
+  <body class="bg-black text-zinc-200">
+    <main class="mx-auto max-w-xl bg-zinc-800">
+      <swiper-container direction="vertical" pagination="true" loop="true">
+        <swiper-slide class="bg-blue-800">Slide 1</swiper-slide>
+        <swiper-slide class="bg-red-800">Slide 2</swiper-slide>
+        <swiper-slide class="bg-green-800">Slide 3</swiper-slide>
       </swiper-container>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
     </main>
   </body>
 </html>

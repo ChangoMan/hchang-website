@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body, main {
+  @apply h-full relative;
+}
+
+swiper-container {
+  @apply w-full h-full;
+}
+
+swiper-slide {
+  @apply text-center flex items-center justify-center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
