@@ -24,41 +24,135 @@
     <main class="mx-auto max-w-xl bg-zinc-800 cursor-grab">
       <swiper-container direction="vertical" loop="true" mousewheel="true">
         <swiper-slide class="slide-1">
-          <div class="w-full">
+          <section class="w-full">
             <img
               class="block mx-auto mb-6 rounded-full w-32 h-32"
               src="img/hunter-chang-profile.jpg"
               alt="Hunter Chang"
             />
-            <h1 class="text-center text-4xl lg:text-4xl font-bold">
-              Hunter Chang
-            </h1>
+            <h1 class="title">Hunter Chang</h1>
 
+            <p class="text-center mt-2 text-shadow">
+              Building for the Web since IE6
+            </p>
             <a
-              class="block w-full max-w-md mx-auto py-4 px-2 mt-8 border-2 border-white rounded-md text-center shadow-sm"
+              class="link-button"
               href="https://codebushi.com/"
               target="_blank"
               rel="noopener"
-              >Code Bushi &bull; Web Development Blog
+            >
+              Code Bushi &bull; Web Development Blog
             </a>
-          </div>
+          </section>
         </swiper-slide>
-        <swiper-slide class="slide-2">Slide 2</swiper-slide>
-        <swiper-slide class="slide-3">Slide 3</swiper-slide>
+        <swiper-slide class="slide-2">
+          <section class="w-full">
+            <h2 class="title">Resume Wind</h2>
+
+            <p class="mt-6 text-shadow text-sm leading-relaxed">
+              A place where you can try out and purchase HTML and CSS resume
+              templates. My old resume was made with Adobe Illustrator, which I
+              no longer have. I wanted a medium where I could easily design and
+              edit resumes, so I made a few HTML based templates.
+            </p>
+            <a
+              class="link-button"
+              href="https://codebushi.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              Beautiful HTML Resume Templates
+            </a>
+          </section>
+        </swiper-slide>
+        <swiper-slide class="slide-3"
+          ><section class="w-full">
+            <h2 class="title">Travel x Family</h2>
+
+            <p class="mt-6 text-shadow text-sm leading-relaxed">
+              In June 2023, I quit my job and moved to China with my family. I
+              wanted a place to share our adventures and the challenges of
+              traveling with my 4-year-old daughter.
+            </p>
+            <a
+              class="link-button"
+              href="https://travelxfamily.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              Family Friendly Travel Blog
+            </a>
+          </section></swiper-slide
+        >
       </swiper-container>
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 
       <p
-        class="absolute bottom-0 left-0 z-10 pb-8 pl-6 pr-24 text-sm leading-relaxed drop-shadow-sm"
+        class="absolute bottom-0 left-0 z-10 pb-8 pl-6 pr-20 text-xs lg:text-sm leading-relaxed text-shadow"
       >
-        Sleep Deprived Father. Senior Front-end Engineer. Currently travel
-        blogging around China and Asia.
+        Sleep Deprived Father. Senior Front-end Engineer. Lover of all things
+        Ramen and Kpop. Currently travel blogging around China and Asia.
       </p>
 
       <div class="absolute right-0 bottom-0 z-20 pb-6 pr-4">
         <a
           class="social-link"
+          href="https://www.youtube.com/@codebushi"
+          title="Code Bushi YouTube"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-youtube"
+          >
+            <path
+              d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
+            />
+            <path d="m10 15 5-3-5-3z" />
+          </svg>
+        </a>
+        <a
+          class="social-link"
+          href="https://www.youtube.com/@travelxfamily"
+          title="Travel x Family YouTube"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-footprints"
+          >
+            <path
+              d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"
+            />
+            <path
+              d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"
+            />
+            <path d="M16 17h4" />
+            <path d="M4 13h4" />
+          </svg>
+        </a>
+        <a
+          class="social-link"
           href="https://twitter.com/hunterhchang"
+          title="Follow me on Twitter"
           target="_blank"
           rel="noopener"
         >
@@ -82,6 +176,7 @@
         <a
           class="social-link"
           href="https://github.com/ChangoMan"
+          title="Check out my Github"
           target="_blank"
           rel="noopener"
         >
@@ -105,30 +200,6 @@
         </a>
         <a
           class="social-link"
-          href="https://www.youtube.com/@codebushi"
-          target="_blank"
-          rel="noopener"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-youtube"
-          >
-            <path
-              d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"
-            />
-            <path d="m10 15 5-3-5-3z" />
-          </svg>
-        </a>
-        <!-- <a
-          class="social-link"
           href="https://instagram.com/changodaman"
           target="_blank"
           rel="noopener"
@@ -149,7 +220,7 @@
             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
             <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
           </svg>
-        </a> -->
+        </a>
       </div>
     </main>
   </body>

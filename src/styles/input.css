@@ -15,7 +15,19 @@ swiper-slide {
 }
 
 .social-link {
-  @apply p-2 block;
+  @apply mt-1 p-2 block;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+.title {
+  @apply text-center text-4xl text-shadow font-bold;
+}
+
+.link-button {
+  @apply block w-full max-w-md mx-auto py-4 px-2 mt-8 bg-slate-800/50 border-2 border-indigo-300 rounded-lg text-center text-shadow font-semibold;
 }
 
 .slide-1 {
