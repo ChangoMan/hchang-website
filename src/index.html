@@ -5,16 +5,36 @@
     <title>Hunter Chang - Website</title>
     <meta
       name="description"
-      content="Sleep Deprived Father. Senior Web Developer in China. Lover of all things Ramen and Kpop."
+      content="Sleep Deprived Father. Senior Front-end Engineer in China. Lover of all things Ramen and Kpop."
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:title" content="Hunter Chang - Website" />
+    <meta
+      property="og:description"
+      content="Sleep Deprived Father. Senior Front-end Engineer in China. Lover of all things Ramen and Kpop."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hunterchang.com" />
+    <meta
+      property="og:image"
+      content="https://hunterchang.com/img/site-preview.jpg"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@hunterhchang" />
+    <meta name="twitter:title" content="Hunter Chang - Website" />
+    <meta
+      name="twitter:description"
+      content="Sleep Deprived Father. Senior Front-end Engineer in China. Lover of all things Ramen and Kpop."
+    />
+    <meta
+      name="twitter:image"
+      content="https://hunterchang.com/img/site-preview.jpg"
+    />
 
     <!-- <link rel="manifest" href="site.webmanifest" /> -->
+    <link rel="canonical" href="https://hunterchang.com" />
     <link rel="apple-touch-icon" href="icon.png" />
     <link rel="stylesheet" href="styles/styles.css" />
     <meta name="theme-color" content="#fafafa" />
@@ -24,15 +44,15 @@
     <main class="mx-auto max-w-xl bg-zinc-800 cursor-grab">
       <swiper-container direction="vertical" loop="true" mousewheel="true">
         <swiper-slide class="slide-1">
-          <section class="w-full">
-            <img
+          <section class="section w-full">
+            <!-- <img
               class="block mx-auto mb-6 rounded-full w-32 h-32"
               src="img/hunter-chang-profile.jpg"
               alt="Hunter Chang"
-            />
+            /> -->
             <h1 class="title">Hunter Chang</h1>
 
-            <p class="text-center mt-2 text-shadow">
+            <p class="mt-2 text-center text-shadow">
               Building for the Web since IE6
             </p>
             <a
@@ -44,17 +64,18 @@
               Code Bushi &bull; Web Development Blog
             </a>
           </section>
+          <p class="description">
+            Sleep Deprived Father. Senior Front-end Engineer. Lover of all
+            things Ramen and Kpop. Currently travel blogging around China and
+            Asia.
+          </p>
+          <video class="video" autoplay muted loop>
+            <source src="./videos/slide-1.mp4" type="video/mp4" />
+          </video>
         </swiper-slide>
         <swiper-slide class="slide-2">
-          <section class="w-full">
+          <section class="section w-full">
             <h2 class="title">Resume Wind</h2>
-
-            <p class="mt-6 text-shadow text-sm leading-relaxed">
-              A place where you can try out and purchase HTML and CSS resume
-              templates. My old resume was made with Adobe Illustrator, which I
-              no longer have. I wanted a medium where I could easily design and
-              edit resumes, so I made a few HTML based templates.
-            </p>
             <a
               class="link-button"
               href="https://resumewind.com/"
@@ -64,16 +85,16 @@
               Beautiful HTML Resume Templates
             </a>
           </section>
+          <p class="description">
+            My old resume was made with Adobe Illustrator, which I no longer
+            have. I created some HTML resume templates and styled them with
+            Tailwind CSS. This made my resume easy to update and mobile
+            friendly.
+          </p>
         </swiper-slide>
-        <swiper-slide class="slide-3"
-          ><section class="w-full">
+        <swiper-slide class="slide-3">
+          <section class="section w-full">
             <h2 class="title">Travel x Family</h2>
-
-            <p class="mt-6 text-shadow text-sm leading-relaxed">
-              In June 2023, I quit my tech startup job and moved to China with
-              my family. I wanted a place to share our adventures and the
-              challenges of traveling with my 4-year-old daughter.
-            </p>
             <a
               class="link-button"
               href="https://travelxfamily.com/"
@@ -82,17 +103,15 @@
             >
               Family Friendly Travel Blog
             </a>
-          </section></swiper-slide
-        >
+          </section>
+          <p class="description">
+            In June 2023, I quit my tech startup job and moved to China with my
+            family. I wanted a place to share our adventures and the challenges
+            of traveling with my 4-year-old daughter.
+          </p>
+        </swiper-slide>
       </swiper-container>
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
-
-      <p
-        class="absolute bottom-0 left-0 z-10 pb-8 pl-6 pr-20 text-sm leading-relaxed text-shadow"
-      >
-        Sleep Deprived Father. Senior Front-end Engineer. Lover of all things
-        Ramen and Kpop. Currently travel blogging around China and Asia.
-      </p>
 
       <div class="absolute right-0 bottom-0 z-20 pb-6 pr-4">
         <a
@@ -223,5 +242,13 @@
         </a>
       </div>
     </main>
+
+    <script>
+      const swiperEl = document.querySelector('swiper-container')
+
+      swiperEl.addEventListener('slidechange', (event) => {
+        console.log('slide changed')
+      })
+    </script>
   </body>
 </html>

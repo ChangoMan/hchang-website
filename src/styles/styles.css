@@ -542,16 +542,8 @@ video {
   bottom: 0px;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .right-0 {
   right: 0px;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .z-20 {
@@ -569,10 +561,6 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .block {
@@ -617,38 +605,12 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.pb-8 {
-  padding-bottom: 2rem;
-}
-
-.pl-6 {
-  padding-left: 1.5rem;
-}
-
-.pr-20 {
-  padding-right: 5rem;
-}
-
 .pr-4 {
   padding-right: 1rem;
 }
 
 .text-center {
   text-align: center;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.leading-relaxed {
-  line-height: 1.625;
 }
 
 .text-zinc-200 {
@@ -714,6 +676,35 @@ swiper-slide {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
 }
 
+.description {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 10;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  line-height: 1.625;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
+}
+
+.video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+.section {
+  z-index: 10;
+}
+
 .slide-1 {
   background-image: url(../img/bg-slide-1.jpg);
 }
@@ -724,11 +715,4 @@ swiper-slide {
 
 .slide-3 {
   background-image: url(../img/bg-slide-3.jpg);
-}
-
-@media (min-width: 1024px) {
-  .lg\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-  }
 }
