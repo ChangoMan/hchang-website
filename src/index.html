@@ -47,7 +47,7 @@
           <section class="section w-full">
             <h1 class="title">Hunter Chang</h1>
 
-            <p class="mt-2 text-center text-shadow">
+            <p class="mt-2 font-semibold text-center text-shadow">
               Building for the Web since IE6
             </p>
             <a
@@ -86,6 +86,9 @@
             Tailwind CSS. This made my resume easy to update and mobile
             friendly.
           </p>
+          <video class="video" autoplay muted loop>
+            <source src="./videos/slide-2.mp4" type="video/mp4" />
+          </video>
         </swiper-slide>
         <swiper-slide class="slide-3">
           <section class="section w-full">
@@ -104,6 +107,9 @@
             family. I wanted a place to share our adventures and the challenges
             of traveling with my 4-year-old daughter.
           </p>
+          <video class="video" autoplay muted loop>
+            <source src="./videos/slide-3.mp4" type="video/mp4" />
+          </video>
         </swiper-slide>
       </swiper-container>
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
@@ -225,13 +231,5 @@
         </a>
       </div>
     </main>
-
-    <script>
-      const swiperEl = document.querySelector('swiper-container')
-
-      swiperEl.addEventListener('slidechange', (event) => {
-        console.log('slide changed')
-      })
-    </script>
   </body>
 </html>
