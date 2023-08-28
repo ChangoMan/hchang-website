@@ -89,12 +89,7 @@
             Tailwind CSS. This made my resume easy to update and mobile
             friendly.
           </p>
-          <video id="video-2" class="video" autoplay muted loop>
-            <source
-              src="https://res.cloudinary.com/dny1birfg/video/upload/f_auto:video,q_auto/v1/hunterchang/camp7bbrqzzulzxqx4cg"
-              type="video/mp4"
-            />
-          </video>
+          <video id="video-2" class="video" autoplay muted loop></video>
         </swiper-slide>
         <swiper-slide class="slide-3">
           <section class="section w-full">
@@ -113,12 +108,7 @@
             family. I wanted a place to share our adventures and the challenges
             of traveling with my 4-year-old daughter.
           </p>
-          <video id="video-3" class="video" autoplay muted loop>
-            <source
-              src="https://res.cloudinary.com/dny1birfg/video/upload/f_auto:video,q_auto/v1/hunterchang/zzfnks2d9n1yu3yxucvd"
-              type="video/mp4"
-            />
-          </video>
+          <video id="video-3" class="video" autoplay muted loop></video>
         </swiper-slide>
       </swiper-container>
       <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
@@ -252,6 +242,9 @@
         const [swiper] = event.detail
         const { realIndex } = swiper
 
+        const source2 = document.getElementById('source-2')
+        const source3 = document.getElementById('source-3')
+
         if (realIndex === 0) {
           video1.play()
 
@@ -261,6 +254,13 @@
         }
 
         if (realIndex === 1) {
+          if (!source2) {
+            video2.insertAdjacentHTML(
+              'afterbegin',
+              '<source id="source-2" src="https://res.cloudinary.com/dny1birfg/video/upload/f_auto:video,q_auto/v1/hunterchang/camp7bbrqzzulzxqx4cg" type="video/mp4" />'
+            )
+          }
+
           video2.play()
 
           video1.pause()
@@ -269,6 +269,13 @@
         }
 
         if (realIndex === 2) {
+          if (!source3) {
+            video3.insertAdjacentHTML(
+              'afterbegin',
+              '<source id="source-3" src="https://res.cloudinary.com/dny1birfg/video/upload/f_auto:video,q_auto/v1/hunterchang/zzfnks2d9n1yu3yxucvd" type="video/mp4" />'
+            )
+          }
+
           video3.play()
 
           video1.pause()
