@@ -35,7 +35,7 @@
 
     <!-- <link rel="manifest" href="site.webmanifest" /> -->
     <link rel="canonical" href="https://hunterchang.com" />
-    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="stylesheet" href="styles/styles.css" />
     <meta name="theme-color" content="#fafafa" />
   </head>
@@ -64,7 +64,7 @@
             things Ramen and Kpop. Currently travel blogging around China and
             Asia.
           </p>
-          <video class="video" autoplay muted loop>
+          <video id="video-1" class="video" autoplay muted loop>
             <source
               src="https://res.cloudinary.com/dny1birfg/video/upload/f_auto:video,q_auto/v1/hunterchang/ztatuf2yueqltorect9w"
               type="video/mp4"
@@ -89,7 +89,7 @@
             Tailwind CSS. This made my resume easy to update and mobile
             friendly.
           </p>
-          <video class="video" autoplay muted loop>
+          <video id="video-2" class="video" autoplay muted loop>
             <source
               src="https://res.cloudinary.com/dny1birfg/video/upload/f_auto:video,q_auto/v1/hunterchang/camp7bbrqzzulzxqx4cg"
               type="video/mp4"
@@ -113,7 +113,7 @@
             family. I wanted a place to share our adventures and the challenges
             of traveling with my 4-year-old daughter.
           </p>
-          <video class="video" autoplay muted loop>
+          <video id="video-3" class="video" autoplay muted loop>
             <source
               src="https://res.cloudinary.com/dny1birfg/video/upload/f_auto:video,q_auto/v1/hunterchang/zzfnks2d9n1yu3yxucvd"
               type="video/mp4"
@@ -131,7 +131,7 @@
         >
           <img
             class="block mx-auto mb-3 rounded-full w-8 h-8"
-            src="https://res.cloudinary.com/dny1birfg/image/upload/f_auto,q_auto/v1/hunterchang/zptjz38dyhal2ydjufkg"
+            src="https://res.cloudinary.com/dny1birfg/image/upload/f_auto,q_auto/v1/hunterchang/kyd5v0stdjhxqnhoklcn"
             alt="Hunter Chang"
           />
         </a>
@@ -240,5 +240,42 @@
         </a>
       </div>
     </main>
+
+    <script>
+      const swiperEl = document.querySelector('swiper-container')
+
+      const video1 = document.getElementById('video-1')
+      const video2 = document.getElementById('video-2')
+      const video3 = document.getElementById('video-3')
+
+      swiperEl.addEventListener('realindexchange', (event) => {
+        const [swiper] = event.detail
+        const { realIndex } = swiper
+
+        if (realIndex === 0) {
+          video1.play()
+
+          video2.pause()
+          video3.pause()
+          return
+        }
+
+        if (realIndex === 1) {
+          video2.play()
+
+          video1.pause()
+          video3.pause()
+          return
+        }
+
+        if (realIndex === 2) {
+          video3.play()
+
+          video1.pause()
+          video2.pause()
+          return
+        }
+      })
+    </script>
   </body>
 </html>

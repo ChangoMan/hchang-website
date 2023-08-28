@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/styles.css --minify",
-    "dev": "npm run dev-browser && npm run dev-tailwind",
-    "dev-browser": "browser-sync start --no-notify --server './src' --files './src/*.html, ./src/styles/*.css'",
+    "dev": "browser-sync start --no-notify --server './src' --files './src/*.html, ./src/styles/*.css'",
     "dev-tailwind": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/styles.css --watch"
   },
   "author": "",
