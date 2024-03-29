@@ -27,7 +27,7 @@ swiper-slide {
 }
 
 .link-button {
-  @apply block w-full max-w-md mx-auto py-4 px-2 mt-8 bg-slate-800/50 border-2 border-indigo-300 rounded-lg text-center text-shadow font-semibold;
+  @apply block w-full max-w-md mx-auto py-4 px-2 mt-8 bg-black/35 border-2 border-white rounded-lg text-center text-shadow font-semibold;
 }
 
 .description {
