@@ -26,8 +26,12 @@ swiper-slide {
   @apply text-center text-4xl text-shadow font-bold;
 }
 
+.subtitle {
+  @apply mt-2 font-semibold text-center text-shadow;
+}
+
 .link-button {
-  @apply block w-full max-w-md mx-auto py-4 px-2 mt-8 bg-black/35 border-2 border-white rounded-lg text-center text-shadow font-semibold;
+  @apply inline-block mx-auto py-4 px-6 mt-8 bg-black/30 border-2 border-white rounded-lg text-center text-shadow font-semibold;
 }
 
 .description {
